@@ -32,6 +32,6 @@ async def about_message(ctx):
         icon_url="https://example.com/path_to_logo.png"  # Replace with actual logo URL sometime
     )
 
-    await ctx.send(embed=embed)restarter.mattcowley.co.uk/donate
+    await ctx.send(embed=embed)
 
 bot.run('token')
