@@ -3,7 +3,7 @@ Envy Rebooter is a open source reverse enginnering project in Python to replicat
 ## How to self host Envy Rebooter
 **You will need Python 3.8 or later to use Envy Rebooter. Download Python [here](https://www.python.org/).**
 
-Once you have Python installed, you will need to install discord.py. You can do it by running the following:
+Once you have Python installed, you will need to install **discord.py**. You can do it by running the following:
 ```bash
 pip install discord.py
 ```
