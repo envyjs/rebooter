@@ -13,3 +13,11 @@ Now run the following to clone the latest version of our repo:
 ```bash
 git clone https://github.com/envyjs/rebooter.git && cd rebooter
 ```
+
+Once that is done, open main.py in your favorite text editor and go to the bottom. You should see the following:
+
+```python
+bot.run('token')
+```
+
+Replace **token** inside **bot.run('token')** with your actual Discord bot token.
