@@ -1,5 +1,5 @@
 # Envy Rebooter
-Envy Rebooter is a open source reverse enginnering project in Python to replicate Restarter v3, a popular Discord bot.
+Envy Rebooter is a open source reverse engineering project in Python to replicate Restarter v3, a popular Discord bot.
 ## How to self host Envy Rebooter
 **You will need Python 3.8 or later to use Envy Rebooter. Download Python [here](https://www.python.org/).**
 
