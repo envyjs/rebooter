@@ -21,3 +21,17 @@ bot.run('token')
 ```
 
 Replace **token** inside **bot.run('token')** with your actual Discord bot token.
+
+Now you should be able to start it. Start Envy Rebooter with the following command:
+
+```bash
+python3 main.py
+```
+
+and a message like this should show up:
+
+```bash
+Starting Envy Rebooter
+```
+
+Shall this message be shown and no errors occur, you are now self-hosting Envy Rebooter!
