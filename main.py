@@ -1,4 +1,5 @@
 print("Starting Envy Rebooter")
+import discord
 from discord.ext import commands
 
 # Create an instance of the bot
