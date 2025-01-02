@@ -1,3 +1,4 @@
+print("Starting Envy Rebooter")
 from discord.ext import commands
 # Restarter default prefix
 bot = commands.Bot(command_prefix='r.')
