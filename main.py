@@ -24,7 +24,7 @@ async def about_message(ctx):
     embed.add_field(name="Author", value="Envy Rebooter is made by Envy, a global community.", inline=False)
     embed.add_field(
         name="Support",
-        value="Join the support server for general discussion about the bot, bug reporting, and for help: [Support Server](https://www.example.com)",
+        value="Join the support server for general discussion about the bot, bug reporting, and for help: [Support Server](https://discord.gg/eNs4HBZF)",
         inline=False
     )
     embed.set_footer(
