@@ -1,6 +1,7 @@
 print("Starting Envy Rebooter")
 import discord
 from discord.ext import commands
+from datetime import datetime, timedelta
 
 # Create an instance of the bot
 intents = discord.Intents.default()
@@ -31,7 +32,33 @@ async def about_message(ctx):
         text="Envy Rebooter | https://envy.js.org",
         icon_url="https://example.com/path_to_logo.png"  # Replace with actual logo URL sometime
     )
+    await ctx.send(embed=embed)
 
+# Uptime command, with all the aliases that Restarter recognizes
+@bot.command(name='uptime', aliases=['up', 'time', 'online'])
+async def uptime(ctx):
+    # Calculate the uptime
+    now = datetime.utcnow()
+    delta = now - start_time
+
+    # Format the uptime duration
+    days, seconds = delta.days, delta.seconds
+    hours = seconds // 3600
+    minutes = (seconds % 3600) // 60
+    seconds = seconds % 60
+    uptime_duration = f"{days} days, {hours} hours, {minutes} minutes, {seconds} seconds"
+
+    # Embed message
+    embed = discord.Embed(
+        title="⏰ Uptime",
+        color=0xE74C3C  # Red color
+    )
+    embed.add_field(name="Started", value=start_time.strftime("%a %d %b %Y at %H:%M UTC"), inline=False)
+    embed.add_field(name="Alive", value=f"`{uptime_duration}`", inline=False)
+    embed.set_footer(
+        text="Envy Rebooter | https://envy.js.org",
+        icon_url="https://example.com/path_to_logo.png"  # Replace with actual logo URL sometime
+    )
     await ctx.send(embed=embed)
 
 bot.run('token')
