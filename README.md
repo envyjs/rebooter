@@ -5,7 +5,7 @@ Envy Rebooter is a open source reverse engineering project in Python to replicat
 
 Once you have Python installed, you will need to install **discord.py**. You can do it by running the following:
 ```bash
-pip install discord.py
+pip install -U discord.py
 ```
 Keep in mind that you will need superuser priveleges to run **pip** so put sudo/doas or whatever your favorite thing is to run **pip**.
 
