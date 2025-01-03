@@ -2,16 +2,19 @@ print("Starting Envy Rebooter")
 import discord
 from discord.ext import commands
 from datetime import datetime, timedelta
-
 # Create an instance of the bot
 intents = discord.Intents.default()
 intents.message_content = True
 # Restarter default prefix
 bot = commands.Bot(command_prefix='r.', intents=intents)
+# Start counting uptime
+start_time = None
 
 # When the bot is ready
 @bot.event
 async def on_ready():
+    global start_time
+    start_time = datetime.utcnow()
     print(f'Logged in as {bot.user}')
 
 # About command, with all the aliases that Restarter recognizes
