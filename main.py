@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 
 # Create an instance of the bot
 intents = discord.Intents.default()
-intents.messages = True
+intents.message_content = True
 # Restarter default prefix
 bot = commands.Bot(command_prefix='r.', intents=intents)
 
