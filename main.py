@@ -37,6 +37,22 @@ async def about_message(ctx):
     )
     await ctx.send(embed=embed)
 
+# Invite command, with all the aliases that Restarter recognizes
+@bot.command(name='invite', aliases=['add'])
+async def invite(ctx):
+    # Embed message
+    embed = discord.Embed(
+        title="🔗 Invite",
+        color=0xE74C3C  # Red color
+    )
+    embed.add_field(name="Invite the bot", value="Coming soon", inline=False)
+    embed.add_field(name="Support", value="Join the support server for general discussion about the bot, bug reporting and for help: https://discord.gg/eNs4HBZF", inline=False)
+    embed.set_footer(
+        text="Envy Rebooter | https://envy.js.org",
+        icon_url="https://example.com/path_to_logo.png"  # Replace with actual logo URL sometime
+    )
+    await ctx.send(embed=embed)
+
 # Uptime command, with all the aliases that Restarter recognizes
 @bot.command(name='uptime', aliases=['up', 'time', 'online'])
 async def uptime(ctx):
