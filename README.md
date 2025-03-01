@@ -7,7 +7,7 @@ Once you have Python installed, you will need to install **discord.py**. You can
 ```bash
 pip install -U discord.py
 ```
-Keep in mind that you will need superuser priveleges to run **pip** so put sudo/doas or whatever your favorite thing is to run **pip**.
+Keep in mind that you will need superuser priveleges to run **pip** so put sudo/doas or whatever your favorite privelege esculator is to run **pip**.
 
 Now run the following to clone the latest version of our repo:
 ```bash
