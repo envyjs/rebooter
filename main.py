@@ -32,7 +32,7 @@ async def about_message(ctx):
         inline=False
     )
     embed.set_footer(
-        text="Envy Rebooter | https://envy.js.org",
+        text="Envy Rebooter | https://envy.ink/rebooter",
         icon_url="https://example.com/path_to_logo.png"  # Replace with actual logo URL sometime
     )
     await ctx.send(embed=embed)
@@ -48,7 +48,7 @@ async def invite(ctx):
     embed.add_field(name="Invite the bot", value="Coming soon", inline=False)
     embed.add_field(name="Support", value="Join the support server for general discussion about the bot, bug reporting and for help: https://discord.gg/eNs4HBZF", inline=False)
     embed.set_footer(
-        text="Envy Rebooter | https://envy.js.org",
+        text="Envy Rebooter | https://envy.ink/rebooter",
         icon_url="https://example.com/path_to_logo.png"  # Replace with actual logo URL sometime
     )
     await ctx.send(embed=embed)
@@ -75,7 +75,7 @@ async def uptime(ctx):
     embed.add_field(name="Started", value=start_time.strftime("%a %d %b %Y at %H:%M UTC"), inline=False)
     embed.add_field(name="Alive", value=f"`{uptime_duration}`", inline=False)
     embed.set_footer(
-        text="Envy Rebooter | https://envy.js.org",
+        text="Envy Rebooter | https://envy.ink/rebooter",
         icon_url="https://example.com/path_to_logo.png"  # Replace with actual logo URL sometime
     )
     await ctx.send(embed=embed)
